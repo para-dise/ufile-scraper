@@ -12,7 +12,10 @@ for i in range(1,10000000):
     time.sleep(.1)
     link = ran()
     
-    inviteurl = 'https://217.182.136.95/'+link
-    asd = requests.get(inviteurl, verify=False)
-    print(asd)
-    print('attempted code: '+inviteurl)
+    fileurl = 'https://217.182.136.95/'+link
+    asd = requests.get(fileurl, verify=False)
+    #print(asd)
+    if asd.status_code == 200:
+          print('attempted code: '+inviteurl)
+    else:
+          pass

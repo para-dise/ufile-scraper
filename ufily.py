@@ -16,6 +16,6 @@ for i in range(1,10000000):
     asd = requests.get(fileurl, verify=False)
     #print(asd)
     if asd.status_code == 200:
-          print('attempted code: '+inviteurl)
+          print('attempted code: '+fileurl)
     else:
           pass
